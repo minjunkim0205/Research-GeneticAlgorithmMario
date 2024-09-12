@@ -1,9 +1,8 @@
 import retro
+import numpy
 
-env = retro.make(game='SuperMarioBros-Nes', state='Level1-1')
+env = retro.make(game="SuperMarioBros-Nes", state="Level1-1")
 env.reset()
 
-screen = env.get_screen()
-
-print(screen.shape, end="\n\n")
-print(screen, end="\n")
+# Key input
+env.step(numpy.array([0, 0, 0, 0, 0, 0, 0, 0, 0]))# B,NULL,SELECT,START,U,D,L,R,A
