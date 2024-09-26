@@ -14,6 +14,7 @@
     ```cmd
     pip install PyQt5
     pip install numpy
+    pip install tensorflow
     pip install gym-retro
     pip install gym==0.25.2
     ```
